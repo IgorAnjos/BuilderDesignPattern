@@ -1,9 +1,8 @@
 ﻿namespace builderDesignPattern.Builders.Base
 {
-    using builderDesignPattern.Processors;
+    using Processors;
     using Domain;
 
-    //using Processors;
     public abstract class PizzaBuilderBase
     {
         protected Pizza Pizza = null;
@@ -12,6 +11,11 @@
         protected PizzaBuilderBase(ICalculaValor calculaValor)
         {
             CalculaValor = calculaValor;
+        }
+
+        public virtual void DefineValor()
+        {
+            CalculaValor.DefineValor(Pizza);
         }
 
         public Pizza GetPizza()

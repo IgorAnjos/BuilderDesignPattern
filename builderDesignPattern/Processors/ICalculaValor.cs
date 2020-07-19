@@ -1,7 +1,7 @@
-﻿using builderDesignPattern.Domain;
-
-namespace builderDesignPattern.Processors
+﻿namespace builderDesignPattern.Processors
 {
+    using Domain;
+
     public interface ICalculaValor
     {
         void DefineValor(Pizza pizza);

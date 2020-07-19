@@ -1,6 +1,7 @@
 ﻿namespace builderDesignPattern.Domain
 {
     using ValueObject;
+
     public class Pizza
     {
         public string Sabor { get; set; }

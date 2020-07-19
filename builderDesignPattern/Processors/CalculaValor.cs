@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace builderDesignPattern.Processors
 {
     using Domain;
     using Domain.ValueObject;
-    using System.Linq;
-
+    
     public class CalculaValor : ICalculaValor
     {
         public void DefineValor(Pizza pizza)
